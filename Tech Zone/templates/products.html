@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+
+{% block title %}Products | TechZone{% endblock %}
+
+{% block content %}
+
+<section class="container py-5 mt-5">
+
+    <div class="text-center mb-5">
+
+        <h1 class="display-4 fw-bold">
+            Premium Smartphones
+        </h1>
+
+        <p class="text-secondary">
+            Browse our newest flagship devices.
+        </p>
+
+    </div>
+
+    <!-- SEARCH -->
+
+    <div class="row mb-4">
+
+        <div class="col-lg-6 mx-auto">
+
+            <input
+                type="text"
+                id="search"
+                class="form-control form-control-lg"
+                placeholder="Search for a smartphone...">
+
+        </div>
+
+    </div>
+
+    <!-- FILTERS -->
+
+    <div class="text-center mb-5">
+
+        <button class="btn btn-danger filter-btn m-1" data-brand="all">
+            All
+        </button>
+
+        <button class="btn btn-outline-light filter-btn m-1" data-brand="Apple">
+            Apple
+        </button>
+
+        <button class="btn btn-outline-light filter-btn m-1" data-brand="Samsung">
+            Samsung
+        </button>
+
+        <button class="btn btn-outline-light filter-btn m-1" data-brand="Google">
+            Google
+        </button>
+
+        <button class="btn btn-outline-light filter-btn m-1" data-brand="OnePlus">
+            OnePlus
+        </button>
+
+    </div>
+
+    <div class="row g-4" id="productContainer">
+
+        <!-- PRODUCT 1 -->
+
+        <div class="col-lg-4 col-md-6 product" data-brand="Apple">
+
+            <div class="product-card">
+
+                <div class="product-top">
+
+                    <span class="badge bg-danger">
+                        NEW
+                    </span>
+
+                    <i class="bi bi-heart"></i>
+
+                </div>
+
+                <img src="{{ url_for('static', filename='images/iphone16.png') }}"
+                     class="img-fluid">
+
+                <h3>iPhone 16 Pro Max</h3>
+
+                <p>A18 Pro • 256GB</p>
+
+                <h2>₾3999</h2>
+
+                <div class="d-grid gap-2">
+
+                    <button class="btn btn-danger add-cart">
+
+                        <i class="bi bi-cart-plus"></i>
+
+                        Add To Cart
+
+                    </button>
+
+                    <button class="btn btn-outline-light">
+
+                        <i class="bi bi-eye"></i>
+
+                        Quick View
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 2 -->
+
+        <div class="col-lg-4 col-md-6 product" data-brand="Samsung">
+
+            <div class="product-card">
+
+                <div class="product-top">
+
+                    <span class="badge bg-danger">
+                        HOT
+                    </span>
+
+                    <i class="bi bi-heart"></i>
+
+                </div>
+
+                <img src="{{ url_for('static', filename='images/s25.png') }}"
+                     class="img-fluid">
+
+                <h3>Galaxy S25 Ultra</h3>
+
+                <p>Snapdragon Elite • 512GB</p>
+
+                <h2>₾3899</h2>
+
+                <div class="d-grid gap-2">
+
+                    <button class="btn btn-danger add-cart">
+
+                        <i class="bi bi-cart-plus"></i>
+
+                        Add To Cart
+
+                    </button>
+
+                    <button class="btn btn-outline-light">
+
+                        <i class="bi bi-eye"></i>
+
+                        Quick View
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 3 -->
+
+        <div class="col-lg-4 col-md-6 product" data-brand="Google">
+
+            <div class="product-card">
+
+                <div class="product-top">
+
+                    <span class="badge bg-danger">
+                        BEST
+                    </span>
+
+                    <i class="bi bi-heart"></i>
+
+                </div>
+
+                <img src="{{ url_for('static', filename='images/pixel9.png') }}"
+                     class="img-fluid">
+
+                <h3>Google Pixel 9 Pro</h3>
+
+                <p>Google AI • 256GB</p>
+
+                <h2>₾2799</h2>
+
+                <div class="d-grid gap-2">
+
+                    <button class="btn btn-danger add-cart">
+
+                        <i class="bi bi-cart-plus"></i>
+
+                        Add To Cart
+
+                    </button>
+
+                    <button class="btn btn-outline-light">
+
+                        <i class="bi bi-eye"></i>
+
+                        Quick View
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 4 -->
+
+        <div class="col-lg-4 col-md-6 product" data-brand="OnePlus">
+
+            <div class="product-card">
+
+                <div class="product-top">
+
+                    <span class="badge bg-danger">
+                        PRO
+                    </span>
+
+                    <i class="bi bi-heart"></i>
+
+                </div>
+
+                <img src="{{ url_for('static', filename='images/oneplus13.png') }}"
+                     class="img-fluid">
+
+                <h3>OnePlus 13</h3>
+
+                <p>Snapdragon Elite • 256GB</p>
+
+                <h2>₾2599</h2>
+
+                <div class="d-grid gap-2">
+
+                    <button class="btn btn-danger add-cart">
+
+                        <i class="bi bi-cart-plus"></i>
+
+                        Add To Cart
+
+                    </button>
+
+                    <button class="btn btn-outline-light">
+
+                        <i class="bi bi-eye"></i>
+
+                        Quick View
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

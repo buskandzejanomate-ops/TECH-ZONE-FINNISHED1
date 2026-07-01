@@ -1,0 +1,243 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard | TechZone{% endblock %}
+
+{% block content %}
+
+<section class="container py-5 mt-5">
+
+    <div class="text-center mb-5">
+
+        <h1 class="display-4 fw-bold text-danger">
+            Admin Dashboard
+        </h1>
+
+        <p class="text-secondary">
+            Manage your TechZone store.
+        </p>
+
+    </div>
+
+    <!-- Statistics -->
+
+    <div class="row g-4 mb-5">
+
+        <div class="col-md-3">
+
+            <div class="product-card text-center">
+
+                <i class="bi bi-phone display-4 text-danger"></i>
+
+                <h2>4</h2>
+
+                <p>Total Products</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="product-card text-center">
+
+                <i class="bi bi-people display-4 text-danger"></i>
+
+                <h2>12</h2>
+
+                <p>Users</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="product-card text-center">
+
+                <i class="bi bi-bag-check display-4 text-danger"></i>
+
+                <h2>8</h2>
+
+                <p>Orders</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="product-card text-center">
+
+                <i class="bi bi-currency-dollar display-4 text-danger"></i>
+
+                <h2>₾23,400</h2>
+
+                <p>Revenue</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Products -->
+
+    <div class="product-card">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <h3 class="mb-0">
+                Products
+            </h3>
+
+            <button class="btn btn-danger">
+
+                <i class="bi bi-plus-circle"></i>
+
+                Add Product
+
+            </button>
+
+        </div>
+
+        <table class="table table-dark table-hover align-middle">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Brand</th>
+
+                    <th>Price</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>1</td>
+
+                    <td>iPhone 16 Pro Max</td>
+
+                    <td>Apple</td>
+
+                    <td>₾3999</td>
+
+                    <td>
+
+                        <button class="btn btn-warning btn-sm">
+
+                            Edit
+
+                        </button>
+
+                        <button class="btn btn-danger btn-sm">
+
+                            Delete
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>2</td>
+
+                    <td>Galaxy S25 Ultra</td>
+
+                    <td>Samsung</td>
+
+                    <td>₾3899</td>
+
+                    <td>
+
+                        <button class="btn btn-warning btn-sm">
+
+                            Edit
+
+                        </button>
+
+                        <button class="btn btn-danger btn-sm">
+
+                            Delete
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>3</td>
+
+                    <td>Pixel 9 Pro</td>
+
+                    <td>Google</td>
+
+                    <td>₾2799</td>
+
+                    <td>
+
+                        <button class="btn btn-warning btn-sm">
+
+                            Edit
+
+                        </button>
+
+                        <button class="btn btn-danger btn-sm">
+
+                            Delete
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>4</td>
+
+                    <td>OnePlus 13</td>
+
+                    <td>OnePlus</td>
+
+                    <td>₾2599</td>
+
+                    <td>
+
+                        <button class="btn btn-warning btn-sm">
+
+                            Edit</button>
+
+                        <button class="btn btn-danger btn-sm">
+
+                            Delete
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,419 @@
+{% extends "base.html" %}
+
+{% block title %}TechZone | Home{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-glow"></div>
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <span class="badge bg-danger px-3 py-2 mb-3">
+                    🔥 NEW 2026 COLLECTION
+                </span>
+
+                <h1 class="display-2 fw-bold">
+
+                    Power.
+
+                    <span class="text-danger">
+                        Performance.
+                    </span>
+
+                    Perfection.
+
+                </h1>
+
+                <p class="lead text-secondary mt-4">
+
+                    Discover the latest smartphones from Apple, Samsung,
+                    Google Pixel and more with premium quality and unbeatable prices.
+
+                </p>
+
+                <div class="mt-5">
+
+                    <a href="/products" class="btn btn-danger btn-lg px-5">
+
+                        Shop Now
+
+                    </a>
+
+                    <a href="/products"
+                       class="btn btn-outline-light btn-lg px-5 ms-3">
+
+                        Explore
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 text-center">
+
+                <img src="{{ url_for('static', filename='images/hero.png') }}"
+                     class="hero-phone img-fluid">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURED PRODUCTS -->
+
+<section class="products py-5">
+
+<div class="container">
+
+<h2 class="section-title">
+
+FEATURED PHONES
+
+</h2>
+
+<div class="row g-4">
+
+
+<!-- iPhone -->
+
+<div class="col-lg-4">
+
+<div class="product-card">
+
+<div class="product-top">
+
+<span class="badge bg-danger">
+
+NEW
+
+</span>
+
+<i class="bi bi-heart"></i>
+
+</div>
+
+<img src="{{ url_for('static', filename='images/iphone16.png') }}"
+class="img-fluid">
+
+<h3>
+
+iPhone 16 Pro Max
+
+</h3>
+
+<p>
+
+A18 Pro • 256GB
+
+</p>
+
+<h2>
+
+₾3999
+
+</h2>
+
+<div class="d-grid gap-2">
+
+<a href="/products" class="btn btn-danger">
+
+<i class="bi bi-cart-plus"></i>
+
+Add To Cart
+
+</a>
+
+<button class="btn btn-outline-light">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Samsung -->
+
+<div class="col-lg-4">
+
+<div class="product-card">
+
+<div class="product-top">
+
+<span class="badge bg-danger">
+
+HOT
+
+</span>
+
+<i class="bi bi-heart"></i>
+
+</div>
+
+<img src="{{ url_for('static', filename='images/s25.png') }}"
+class="img-fluid">
+
+<h3>
+
+Galaxy S25 Ultra
+
+</h3>
+
+<p>
+
+Snapdragon Elite • 512GB
+
+</p>
+
+<h2>
+
+₾3899
+
+</h2>
+
+<div class="d-grid gap-2">
+
+<a href="/products" class="btn btn-danger">
+
+<i class="bi bi-cart-plus"></i>
+
+Add To Cart
+
+</a>
+
+<button class="btn btn-outline-light">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Pixel -->
+
+<div class="col-lg-4">
+
+<div class="product-card">
+
+<div class="product-top">
+
+<span class="badge bg-danger">
+
+BEST
+
+</span>
+
+<i class="bi bi-heart"></i>
+
+</div>
+
+<img src="{{ url_for('static', filename='images/pixel9.png') }}"
+class="img-fluid">
+
+<h3>
+
+Google Pixel 9 Pro
+
+</h3>
+
+<p>
+
+Google AI • 256GB
+
+</p>
+
+<h2>
+
+₾2799
+
+</h2>
+
+<div class="d-grid gap-2">
+
+<a href="/products" class="btn btn-danger">
+
+<i class="bi bi-cart-plus"></i>
+
+Add To Cart
+
+</a>
+
+<button class="btn btn-outline-light">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Why Choose TechZone?
+
+</h2>
+
+<div class="row text-center g-4 mt-3">
+
+<div class="col-lg-4">
+
+<div class="product-card">
+
+<i class="bi bi-truck display-4 text-danger"></i>
+
+<h4 class="mt-3">
+
+Fast Delivery
+
+</h4>
+
+<p>
+
+Nationwide delivery in 24–48 hours.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="product-card">
+
+<i class="bi bi-shield-check display-4 text-danger"></i>
+
+<h4 class="mt-3">
+
+Official Warranty
+
+</h4>
+
+<p>
+
+Every product comes with an official warranty.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="product-card">
+
+<i class="bi bi-headset display-4 text-danger"></i>
+
+<h4 class="mt-3">
+
+24/7 Support
+
+</h4>
+
+<p>
+
+Our team is always ready to help you.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BRANDS -->
+
+<section class="py-5 bg-dark">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Top Brands
+
+</h2>
+
+<div class="row text-center mt-5">
+
+<div class="col">
+
+<h3>Apple</h3>
+
+</div>
+
+<div class="col">
+
+<h3>Samsung</h3>
+
+</div>
+
+<div class="col">
+
+<h3>Google</h3>
+
+</div>
+
+<div class="col">
+
+<h3>OnePlus</h3>
+
+</div>
+
+<div class="col">
+
+<h3>Xiaomi</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}
