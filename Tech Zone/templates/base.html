@@ -29,9 +29,14 @@
 
     <div class="container">
 
-        <a class="navbar-brand fw-bold" href="/">
-            <span class="text-danger">Tech</span>Zone
-        </a>
+  <a class="navbar-brand d-flex align-items-center" href="{{ url_for('home') }}">
+    <img src="{{ url_for('static', filename='images/tbc.png') }}"
+         width="38"
+         height="38"
+         style="margin-right:10px;border-radius:8px;">
+
+    <span>TechZone</span>
+</a>
 
         <button class="navbar-toggler"
                 data-bs-toggle="collapse"
@@ -132,6 +137,13 @@
             </div>
 
             <div class="col-lg-4">
+                
+<div class="text-center mt-3">
+    <img src="{{ url_for('static', filename='images/tbc.png') }}"
+         width="45">
+
+    <p>Powered by TBC Bank</p>
+</div>
 
                 <h5>Quick Links</h5>
 
